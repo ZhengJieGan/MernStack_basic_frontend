@@ -8,8 +8,11 @@ const AddReview = (props) => {
   let editing = false;
 
   if (props.state && props.state.currentReview) {
+    console.log(props.state)
     editing = true;
     initialReviewState = props.state.currentReview.text;
+  } else{
+    console.log("not found")
   }
 
   const { id } = useParams();
