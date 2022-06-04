@@ -39,7 +39,7 @@ const AddReview = (props) => {
           console.log(e);
         });
     } else {
-      RestaurantDataService.updateReview(data)
+      RestaurantDataService.createReview(data)
         .then((response) => {
           setSubmitted(true);
           console.log(response.data);
